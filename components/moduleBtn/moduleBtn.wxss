@@ -1,0 +1,27 @@
+/* moduleBtn.wxss */
+.module-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.tip {
+  border-radius: 50%;
+  border-color: #fff;
+  color: #fff;
+  font-weight: 800;
+}
+
+.tip::after{
+  border: none;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+}

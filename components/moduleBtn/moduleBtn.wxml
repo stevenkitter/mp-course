@@ -1,0 +1,7 @@
+<!--moduleBtn.wxml-->
+<view class="module-btn">
+ <button class='tip' style='background: {{ color }}'>
+   {{ tip }}
+ </button>
+ <text class='title'>{{ title }}</text>
+</view>

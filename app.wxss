@@ -1,0 +1,6 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  box-sizing: border-box;
+  color: #6B6B6B;
+} 
