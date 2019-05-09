@@ -2,7 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/me/me",
-    "pages/answer/answer"
+    "pages/answer/answer",
+    "pages/apply_teacher/applyTeacher",
+    "pages/postCourse/postCourse",
+    "pages/myCourse/myCourse",
+    "pages/allCourse/allCourse"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -19,5 +19,4 @@ Page({
   onLoad: function () {
 
   }
-   
 })

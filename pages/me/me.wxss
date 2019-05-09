@@ -1,1 +1,47 @@
 /* pages/me.wxss */
+
+page {
+  height: 100%;
+  background: #f3f4f8
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 15px;
+  background: #fff;
+}
+
+.header_user_head {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+}
+
+.header_right_content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px;
+}
+
+.header_right_content_name {
+  display: flex;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.header_right_content_detail {
+  color: #999999;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.right_icon_url {
+  position: absolute;
+  right: 10px;
+}
+
+.content {
+  margin-top: 10px;
+}

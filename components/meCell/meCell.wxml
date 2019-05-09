@@ -1,0 +1,8 @@
+<!--components/meCell/meCell.wxml-->
+<view class='cell' catchtap='onCellTap' data-title='{{ title }}'>
+  <image class='icon' src='{{ icon }}'></image>
+  <view class='content'>
+    <text class='title'>{{ title }}</text>
+    <image class='right_icon_url' src='{{ right_icon_url }}'></image>
+  </view>
+</view>

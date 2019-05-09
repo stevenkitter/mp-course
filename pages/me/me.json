@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "meCell": "/components/meCell/meCell"
+  },
+  "navigationBarTitleText": "我的",
+  "backgroundColor": "#f3f4f8"
 }

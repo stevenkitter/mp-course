@@ -1,0 +1,63 @@
+/* pages/apply_teacher/applyTeacher.wxss */
+
+
+
+page {
+  height: 100%;
+  background: #f3f4f8
+}
+
+.file_container {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file {
+  height: 80px;
+  width: 80px;
+}
+
+.action_container {
+  display: flex;
+  flex-direction: column;
+  color: #6B6B6B;
+  margin: 0px 10px;
+  background: #fff;
+  padding: 10px;
+}
+
+.detail {
+  padding: 20px 0;
+}
+
+.detail_text {
+  font-size: 13px;
+}
+.action {
+  border-bottom: 1px solid #f3f4f8;
+}
+.upload_btn {
+  background: #4990E4;
+  color: #fff;
+  font-size: 13px;
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.sure_btn {
+  background: #fff;
+  border: 1px solid #72AAE4;
+  color: #72AAE4;
+  font-size: 13px;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.notice {
+  text-align: center;
+  padding: 200px 10px;
+}

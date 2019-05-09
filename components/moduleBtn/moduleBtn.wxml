@@ -1,6 +1,6 @@
 <!--moduleBtn.wxml-->
 <view class="module-btn">
- <button class='tip' style='background: {{ color }}'>
+ <button class='tip' style='background: {{ color }}' catchtap='onCellTap' data-title='{{ title }}'>
    {{ tip }}
  </button>
  <text class='title'>{{ title }}</text>

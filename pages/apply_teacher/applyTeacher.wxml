@@ -1,0 +1,18 @@
+<!--pages/apply_teacher/applyTeacher.wxml-->
+<view class='container'>
+  <view wx:if="{{ userRole === 0 }}" class='tapContainer'>
+    <view class='file_container'>
+      <image class='file' src="{{ certificate }}"></image>
+    </view>
+    <view class='action_container'>
+      <view class='action'>
+        <button class='upload_btn' bindtap='chooseImage'>选择或者拍摄证件</button>
+      </view>
+      <view class='detail'>
+        <text class='detail_text'>为了确保申请人的教师身份，需要认证:\n1.请选择任何可以证明您身份的图片：教师证、教工卡、身份证、正面照片、学校官网个人介绍等\n2.请拍摄证件的清晰的正面照片\n3.请保证证件的真实性</text>
+      </view>
+      <button class="sure_btn" bindtap='sure'>确定</button>
+    </view>
+  </view>
+  <view wx:if="{{ userRole === 1 }}" class="notice">您已经是老师，无需再申请，如想取消老师资格可以联系管理员～</view>
+</view>

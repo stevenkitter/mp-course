@@ -21,8 +21,13 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onButtonTap: function() {
-
+    onCellTap: function (e) {
+      console.log(e);
+      if (e.currentTarget.dataset.title == "视频课堂") {
+        wx.navigateTo({
+          url: '/pages/allCourse/allCourse',
+        })
+      }
     }
   }
 })

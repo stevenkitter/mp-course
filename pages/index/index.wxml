@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <button class='tapContainer' open-type="getUserInfo">
+  <view class='tapContainer' open-type="getUserInfo">
     <swiper class='swiper' indicator-dots autoplay>
       <block wx:for="{{imgUrls}}" wx:key="{{item}}">
         <swiper-item>
@@ -18,5 +18,5 @@
       <text class='cources-title'>视频课堂</text>
 
     </view>
-  </button>
+  </view>
 </view>

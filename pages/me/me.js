@@ -1,18 +1,29 @@
 // pages/me.js
+const HTTP = require("../../utils/http.js")
+const URIS = require("../../const/urls.js")
+const app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    right_icon_url: "/images/right.png",
+    answer_icon: "/images/answer_icon.png",
+    apply_icon: "/images/apply_icon.png",
+    teacher_icon: "/images/teacher_icon.png",
+    video_icon: "/images/video_icon.png",
+    userInfo: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      userInfo: app.globalData.userInfo
+    })
   },
 
   /**
@@ -26,7 +37,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    const that = this
+    HTTP.GET({}, URIS.UserInfoUri).then(function(res){
+      if (res.statusCode === 200) {
+        that.setData({
+          userInfo: res.data.data
+        })
+      }
+      
+    })
   },
 
   /**
@@ -62,5 +81,19 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  userDetail: function() {
+    console.log("xx")
+  },
+  getuserinfo: function(res) {
+    console.log(res);
+    HTTP.POST(res.detail.userInfo, URIS.SaveUserInfoUri).then(function(res){
+      console.log(res)
+    }).catch(function(err){})
+    this.setData({
+      userInfo: res.detail.userInfo
+    })
+    app.globalData.userInfo = res.detail.userInfo
   }
 })

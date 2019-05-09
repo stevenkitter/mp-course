@@ -1,0 +1,34 @@
+/* components/meCell/meCell.wxss */
+.cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  padding: 0 0 0 15px;
+  
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 15px;
+  border-bottom: 1px solid #f3f4f8;
+  height: 40px;
+}
+
+.title {
+  font-size: 15px;
+}
+.right_icon_url {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}

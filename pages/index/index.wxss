@@ -1,20 +1,14 @@
 /**index.wxss**/
+
+
+
 .container {
   background: green;
   flex-direction: column;
   color: #6B6B6B;
 }
 
-.tapContainer {
-  width: 100%;
-  padding: 0;
-  border-radius: 0px;
-  background: #F3F4F8;
-}
 
-.tapContainer::after{
-  border: none;
-}
 
 .swiper {
   width: 100%;
