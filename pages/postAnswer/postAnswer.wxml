@@ -1,6 +1,16 @@
 <!--pages/postAnswer/postAnswer.wxml-->
 <view class='container'>
   <view class='tapContainer'>
-  
+    <view class='title'>
+      <input placeholder='标题' auto-focus bindinput='bindTitleInput'></input>
+    </view>
+    <view class='desc'>
+      <textarea placeholder='说点什么吧，老铁' auto-focus bindinput='bindDescInput'></textarea>
+    </view>
+    <view class='files'>
+      <image class='file' src='{{item}}' wx:for="{{files}}" wx:key="{{item}}"></image>
+      <image class='file' bindtap='addPicture' wx:if="{{ files.length < 9 }}" src="/images/add.png"></image>
+    </view>
+    <button class="sure_btn" bindtap='sure'>确定</button>
   </view>
 </view>
