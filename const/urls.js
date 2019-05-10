@@ -24,7 +24,10 @@ const ApplyBooks = BaseUrl + BookModule + "/apply";
 const ApplyBookListUri = BaseUrl + BookModule + "/my";
 const ReceiveBookUri = BaseUrl + BookModule + "/receive";
 
-
+const AnswerModule = "/answer";
+const SaveAnswerUri = BaseUrl + AnswerModule + "/add";
+const MyAnswersUri = BaseUrl + AnswerModule + "/my";
+const DeleteMyAnswersUri = BaseUrl + AnswerModule + "/delete";
 module.exports = {
   BaseUrl: BaseUrl,
   Code2SessionUri: Code2SessionUri,
@@ -44,5 +47,9 @@ module.exports = {
 
   ApplyBookListUri: ApplyBookListUri,
   ReceiveBookUri: ReceiveBookUri,
-  FamousCourseUri: FamousCourseUri
+  FamousCourseUri: FamousCourseUri,
+
+  SaveAnswerUri: SaveAnswerUri,
+  MyAnswersUri: MyAnswersUri,
+  DeleteMyAnswersUri: DeleteMyAnswersUri
 }

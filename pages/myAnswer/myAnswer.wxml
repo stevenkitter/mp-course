@@ -1,6 +1,23 @@
 <!--pages/myAnswer/myAnswer.wxml-->
 <view class='container'>
   <view class='tapContainer'>
+    <view class='all_count'>共有个{{ count }}答疑</view>
+    <view class='item_container'>
+      <view class='item' wx:for="{{answers}}" wx:key="{{item.id}}">
+        <view class='left'>
+          <image src='{{item.tkFiles[0].fileName}}' class='thumbnail'></image>
+          <text class='count'>{{item.tkFiles.length}}图</text>
+        </view>
+        <view class='right'>
+          <text class='title'>{{item.title}}</text>
+          <text class='content'>{{item.content}}</text>
+          <view class='action'>
+            <text class='time'>{{item.createTime}}</text>
+            <view class='btn' bindtap='deleteAnswer' data-index='{{index}}'>删除</view>
+          </view>
+        </view>
+      </view>
+    </view>
   </view>
   <image class='upload_btn' src='/images/upload.png' bindtap='postCourse'></image>
 </view>
