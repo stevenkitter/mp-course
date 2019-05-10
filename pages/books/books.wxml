@@ -1,0 +1,27 @@
+<!--pages/books/books.wxml-->
+<view class='container'>
+  <view class='tapContainer'>
+    <checkbox-group bindchange="checkboxChange">
+      <view class='item' wx:for="{{books}}" wx:key="{{item.id}}" data-index='{{index}}'>
+        <view>
+          <image class='icon' src='{{item.icon}}'></image>
+        </view>
+
+        <view class='detai'>
+          <text class='title'>{{ item.name }}</text>
+          <text class='content'>作者：{{ item.author }}</text>
+          <text class='content'>价格：¥{{ item.price }}</text>
+        </view>
+
+        <view class='action'>
+          <checkbox class='btn' value="{{item.id}}" checked="{{item.checked}}" />
+        </view>
+      </view>
+    </checkbox-group>
+  </view>
+
+  <view class='tools'>
+    <text class='number_text'>已选{{ selected.length }}本</text>
+    <button class='apply_btn' bindtap='sure'>提交样书申请</button>
+  </view>
+</view>

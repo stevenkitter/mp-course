@@ -1,4 +1,4 @@
-// pages/allCourse/allCourse.js
+// pages/apply_book/applyBook.js
 
 const URIS = require("../../const/urls.js")
 const HTTP = require("../../utils/http.js")
@@ -9,15 +9,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-    myCourses: [],
-    page: 0
+    categories: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.loadData(false)
+    const that = this;
+    HTTP.GET({}, URIS.BookCategories).then(function(res){
+      console.log(res)
+      that.setData({
+        categories: res.data.data
+      })
+    }).catch(function(err){})
   },
 
   /**
@@ -68,36 +73,12 @@ Page({
   onShareAppMessage: function () {
 
   },
-  loadData: function (more) {
-    if (!more) {
-      this.setData({
-        page: 0
-      })
-    }
-    const that = this
-    HTTP.GET({ page: this.data.page }, URIS.AllCourseUri).then(function (res) {
-      if (res.statusCode === 200) {
-        console.log(res);
-        if (more) {
-          this.setData({
-            page: this.data.page + 1
-          })
-        } else {
-          that.setData({
-            myCourses: res.data.data
-          })
-        }
-
-      }
-    })
-  },
   itemClicked: function(e) {
-    console.log(e);
     const index = e.currentTarget.dataset.index;
-    const course = this.data.myCourses[index];
-    const js = JSON.stringify(course)
+    const course = this.data.categories[index];
+    const js = course.id;
     wx.navigateTo({
-      url: '/pages/courseDetail/courseDetail?course=' + js,
+      url: '/pages/books/books?categoryId=' + js,
     })
   }
 })

@@ -28,6 +28,17 @@ Component({
           url: '/pages/allCourse/allCourse',
         })
       }
+      if (e.currentTarget.dataset.title == "样本申请") {
+        wx.navigateTo({
+          url: '/pages/apply_book/applyBook',
+        })
+      }
+
+      if (e.currentTarget.dataset.title == "我的样书") {
+        wx.navigateTo({
+          url: '/pages/mybooks/mybooks',
+        })
+      }
     }
   }
 })

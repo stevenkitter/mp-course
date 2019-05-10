@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "moduleBtn": "/components/moduleBtn/moduleBtn"
+  },
+  "navigationBarTitleText": "样书申请"
+}

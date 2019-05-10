@@ -1,0 +1,10 @@
+/* pages/apply_book/applyBook.wxss */
+
+.text {
+  font-size: 14px;
+}
+
+.item {
+  display: flex;
+  padding: 20px;
+}

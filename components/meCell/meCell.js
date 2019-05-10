@@ -31,6 +31,11 @@ Component({
           url: '/pages/myCourse/myCourse',
         })
       }
+      if (e.currentTarget.dataset.title == "我的答疑") {
+        wx.navigateTo({
+          url: '/pages/myAnswer/myAnswer',
+        })
+      }
     }
   }
 })

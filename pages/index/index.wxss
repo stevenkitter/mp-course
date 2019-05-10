@@ -27,6 +27,8 @@
 .cources {
   margin-top: 10px;
   background: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 .cources-title {
@@ -35,4 +37,45 @@
   margin-top: 12px;
   color: #6B6B6B;
   font-weight: 500;
+}
+
+
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+  justify-content: flex-start;
+  background: #fff;
+  width: 345rpx;
+}
+
+.image_container {
+  width: 100%;
+}
+
+.icon {
+  width: 100%;
+  height: 100px;
+}
+
+.detai {
+  width: 300rpx;
+  height: 25px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+
+.title {
+  color: #3C4A55;
+  
+}
+
+.item_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #fff;
+  padding-right: 20rpx;
 }

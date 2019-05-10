@@ -1,7 +1,7 @@
 <!--pages/allCourse/allCourse.wxml-->
 <view class='container'>
   <view class='tapContainer'>
-    <view class='item' wx:for="{{myCourses}}" wx:key="{{item.id}}">
+    <view class='item' wx:for="{{myCourses}}" wx:key="{{item.id}}" bindtap='itemClicked' data-index='{{index}}'>
       <view class='image_container'>
         <image class='icon' src='{{item.tkFile.thumbnailName}}'></image>
       </view>

@@ -2,9 +2,9 @@
 <view class="container">
   <view class='tapContainer' open-type="getUserInfo">
     <swiper class='swiper' indicator-dots autoplay>
-      <block wx:for="{{imgUrls}}" wx:key="{{item}}">
-        <swiper-item>
-          <image src="{{item}}" class="slide-image" width="355" height="150" />
+      <block wx:for="{{famous}}" wx:key="{{item}}" >
+        <swiper-item bindtap='famousItemClicked' data-index='{{index}}'>
+          <image src="{{item.tkFile.thumbnailName}}" class="slide-image" width="355" height="150" />
         </swiper-item>
       </block>
     </swiper>
@@ -16,6 +16,16 @@
     </view>
     <view class='cources'>
       <text class='cources-title'>视频课堂</text>
+      <view class='item_container'>
+        <view class='item' wx:for="{{myCourses}}" wx:key="{{item.id}}" bindtap='itemClicked' data-index='{{index}}'>
+          <view class='image_container'>
+            <image class='icon' src='{{item.tkFile.thumbnailName}}'></image>
+          </view>
+          <view class='detai'>
+            <text class='title'>{{ item.title }}</text>
+          </view>
+        </view>
+      </view>
 
     </view>
   </view>

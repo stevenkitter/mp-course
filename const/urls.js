@@ -15,6 +15,14 @@ const AddCourseUri = BaseUrl + CourseModule + "/add";
 const AllCourseUri = BaseUrl + CourseModule + "/all";
 const MyCourseUri = BaseUrl + CourseModule + "/my";
 const DeleteCourseUri = BaseUrl + CourseModule + "/delete";
+const FamousCourseUri = BaseUrl + CourseModule + "/famous";
+
+const BookModule = "/book";
+const BookCategories = BaseUrl + BookModule + "/categories";
+const BooksUri = BaseUrl + BookModule + "/books";
+const ApplyBooks = BaseUrl + BookModule + "/apply";
+const ApplyBookListUri = BaseUrl + BookModule + "/my";
+const ReceiveBookUri = BaseUrl + BookModule + "/receive";
 
 
 module.exports = {
@@ -28,5 +36,13 @@ module.exports = {
   AddCourseUri: AddCourseUri,
   AllCourseUri: AllCourseUri,
   MyCourseUri: MyCourseUri,
-  DeleteCourseUri: DeleteCourseUri
+  DeleteCourseUri: DeleteCourseUri,
+
+  BookCategories: BookCategories,
+  BooksUri: BooksUri,
+  ApplyBooks: ApplyBooks,
+
+  ApplyBookListUri: ApplyBookListUri,
+  ReceiveBookUri: ReceiveBookUri,
+  FamousCourseUri: FamousCourseUri
 }

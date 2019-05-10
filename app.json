@@ -6,7 +6,13 @@
     "pages/apply_teacher/applyTeacher",
     "pages/postCourse/postCourse",
     "pages/myCourse/myCourse",
-    "pages/allCourse/allCourse"
+    "pages/allCourse/allCourse",
+    "pages/courseDetail/courseDetail",
+    "pages/apply_book/applyBook",
+    "pages/books/books",
+    "pages/mybooks/mybooks",
+    "pages/myAnswer/myAnswer",
+    "pages/postAnswer/postAnswer"
   ],
   "window": {
     "backgroundTextStyle": "light",

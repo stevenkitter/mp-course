@@ -1,0 +1,16 @@
+<!--pages/apply_book/applyBook.wxml-->
+<view class='container'>
+
+  <view class='tapContainer'>
+    <view class='module'>
+      <moduleBtn title="我的样书" tip="书" color="#EC9683"></moduleBtn>
+    </view>
+    <view class='item_container'>
+      <view class='item' wx:for='{{ categories }}' wx:key="{{ item.id }}" style='background: {{item.id % 2 === 0 ? "#F3F4F8":"#fff"}}' bindtap='itemClicked' data-index='{{index}}'>
+        <text class='text'>{{ item.name }}</text>
+      </view>
+    </view>
+    
+  </view>
+
+</view>

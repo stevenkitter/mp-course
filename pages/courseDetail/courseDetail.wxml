@@ -1,0 +1,18 @@
+<!--pages/courseDetail/courseDetail.wxml-->
+<view class='container'>
+  <view class='tapContainer'>
+  
+    <view class='video'>
+      <video style='width: 100%' src='{{ course.tkFile.fileName}}'></video>
+    </view>
+    <view class='title'>
+      <text class='title_text'>标题</text>
+      <text class='detail_text'>{{ course.title }}</text>
+    </view>
+
+    <view class='desc'>
+      <text class='title_text'>课程介绍</text>
+      <text class='detail_text'>{{ course.description }}</text>
+    </view>
+  </view>
+</view>

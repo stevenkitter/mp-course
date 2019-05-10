@@ -1,0 +1,9 @@
+/* pages/myAnswer/myAnswer.wxss */
+
+.upload_btn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 20px;
+  bottom: 20px;
+}

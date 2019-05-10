@@ -1,0 +1,6 @@
+<!--pages/myAnswer/myAnswer.wxml-->
+<view class='container'>
+  <view class='tapContainer'>
+  </view>
+  <image class='upload_btn' src='/images/upload.png' bindtap='postCourse'></image>
+</view>
