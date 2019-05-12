@@ -28,6 +28,10 @@ const AnswerModule = "/answer";
 const SaveAnswerUri = BaseUrl + AnswerModule + "/add";
 const MyAnswersUri = BaseUrl + AnswerModule + "/my";
 const DeleteMyAnswersUri = BaseUrl + AnswerModule + "/delete";
+const AddCommentUri = BaseUrl + AnswerModule + "/comment";
+const CommentListUri = BaseUrl + AnswerModule + "/commentList";
+const AllAnswerUri = BaseUrl + AnswerModule + "/all";
+
 module.exports = {
   BaseUrl: BaseUrl,
   Code2SessionUri: Code2SessionUri,
@@ -51,5 +55,9 @@ module.exports = {
 
   SaveAnswerUri: SaveAnswerUri,
   MyAnswersUri: MyAnswersUri,
-  DeleteMyAnswersUri: DeleteMyAnswersUri
+  DeleteMyAnswersUri: DeleteMyAnswersUri,
+
+  AddCommentUri: AddCommentUri,
+  CommentListUri: CommentListUri,
+  AllAnswerUri: AllAnswerUri
 }

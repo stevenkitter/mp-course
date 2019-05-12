@@ -36,6 +36,11 @@ Component({
           url: '/pages/myAnswer/myAnswer',
         })
       }
+      if (e.currentTarget.dataset.title == "我的申请") {
+        wx.navigateTo({
+          url: '/pages/mybooks/mybooks',
+        })
+      }
     }
   }
 })

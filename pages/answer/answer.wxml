@@ -1,2 +1,23 @@
 <!--pages/answers/answer.wxml-->
-<text>pages/answers/answer.wxml</text>
+<view class='container'>
+  <view class='tapContainer'>
+    <view class='item_container'>
+      <view class='item' bindtap='answerDetail' wx:for="{{answers}}" wx:key="{{item.id}}" data-index='{{index}}'>
+        
+        <view class='left'>
+          <text class='title'>{{item.title}}</text>
+          <text class='content'>{{item.content}}</text>
+          <view class='action'>
+            <text class='time'>{{item.user.nickName}}</text>
+            <text class='time'>{{item.createTime}}</text>
+          </view>
+        </view>
+        <view class='right'>
+          <image src='{{item.tkFiles[0].fileName}}' class='thumbnail'></image>
+          <text class='count'>{{item.tkFiles.length}}图</text>
+        </view>
+      </view>
+    </view>
+  </view>
+ 
+</view>

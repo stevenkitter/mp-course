@@ -119,5 +119,13 @@ Page({
         }
       }
     })
+  },
+  answerDetail(e) {
+    const index = e.currentTarget.dataset.index;
+    const an = this.data.answers[index];
+    let js = JSON.stringify(an);
+    wx.navigateTo({
+      url: '/pages/answerDetail/answerDetail?answer='+js,
+    })
   }
 })

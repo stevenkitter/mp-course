@@ -12,7 +12,9 @@
     "pages/books/books",
     "pages/mybooks/mybooks",
     "pages/myAnswer/myAnswer",
-    "pages/postAnswer/postAnswer"
+    "pages/postAnswer/postAnswer",
+    "pages/answerDetail/answerDetail",
+    "pages/myApply/myApply"
   ],
   "window": {
     "backgroundTextStyle": "light",
