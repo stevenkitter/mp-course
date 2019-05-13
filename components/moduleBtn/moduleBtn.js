@@ -39,6 +39,16 @@ Component({
           url: '/pages/mybooks/mybooks',
         })
       }
+      if (e.currentTarget.dataset.title == "课件查询") {
+        wx.navigateTo({
+          url: '/pages/allCourseware/allCourseware',
+        })
+      }
+      if (e.currentTarget.dataset.title == "我的样书") {
+        wx.navigateTo({
+          url: '/pages/mybooks/mybooks',
+        })
+      }
     }
   }
 })

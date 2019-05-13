@@ -41,6 +41,11 @@ Component({
           url: '/pages/mybooks/mybooks',
         })
       }
+      if (e.currentTarget.dataset.title == "上传课件") {
+        wx.navigateTo({
+          url: '/pages/myCourseWare/myCourseWare',
+        })
+      }
     }
   }
 })

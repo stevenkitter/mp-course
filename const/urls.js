@@ -32,6 +32,14 @@ const AddCommentUri = BaseUrl + AnswerModule + "/comment";
 const CommentListUri = BaseUrl + AnswerModule + "/commentList";
 const AllAnswerUri = BaseUrl + AnswerModule + "/all";
 
+const CoursewareModule = "/courseware";
+const AddCoursewareUri = BaseUrl + CoursewareModule + "/add";
+const AllCoursewareUri = BaseUrl + CoursewareModule + "/all";
+const MyCoursewareUri = BaseUrl + CoursewareModule + "/my";
+const DeleteCoursewareUri = BaseUrl + CoursewareModule + "/delete";
+
+
+
 module.exports = {
   BaseUrl: BaseUrl,
   Code2SessionUri: Code2SessionUri,
@@ -59,5 +67,10 @@ module.exports = {
 
   AddCommentUri: AddCommentUri,
   CommentListUri: CommentListUri,
-  AllAnswerUri: AllAnswerUri
+  AllAnswerUri: AllAnswerUri,
+
+  AddCoursewareUri: AddCoursewareUri,
+  AllCoursewareUri: AllCoursewareUri,
+  MyCoursewareUri: MyCoursewareUri,
+  DeleteCoursewareUri: DeleteCoursewareUri
 }
