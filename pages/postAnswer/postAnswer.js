@@ -129,9 +129,8 @@ Page({
             token: wx.getStorageSync("token")
           },
           success: function (res) {
-            console.log(res)
+            
             if (res.statusCode === 200) {
-              
               const data = JSON.parse(res.data)
               if (data.code === 200) {
                 s(data.data.fileId)
@@ -147,5 +146,9 @@ Page({
     })
 
   },
+
+  saveAnswer(res) {
+    
+  }
 
 })
