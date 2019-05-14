@@ -1,0 +1,20 @@
+<!--pages/myCourse/myCourse.wxml-->
+<view class='container'>
+  <view class='tapContainer'>
+    <view class='item' wx:for="{{myCourses}}" wx:key="{{item.id}}" data-index='{{index}}'>
+      <view>
+        <image class='icon' src='{{item.tkFile.fileName}}'></image>
+      </view>
+      
+      <view class='detai'>
+        <text class='title'>{{ item.title }}</text>
+        <text class='content'>{{ item.description }}</text>
+      </view>
+
+      <view class='action'>
+        <button class='btn' bindtap='deleteCourse' data-exerciseid='{{ item.exerciseId }}'>删除</button>
+      </view>
+    </view>
+  </view>
+  <image class='upload_btn' src='/images/upload.png' bindtap='postCourse'></image>
+</view>

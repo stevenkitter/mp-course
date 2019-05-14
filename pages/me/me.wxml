@@ -10,6 +10,7 @@
       <image class='right_icon_url' src='{{right_icon_url}}'></image>
     </view>
     <view class='content'>
+      <meCell icon="{{ answer_icon }}" title="我买的习题" right_icon_url="{{ right_icon_url }}"></meCell>
       <meCell icon="{{ answer_icon }}" title="我的答疑" right_icon_url="{{ right_icon_url }}"></meCell>
       <meCell icon="{{ apply_icon }}" title="我的申请" right_icon_url="{{ right_icon_url }}"></meCell>
       <meCell icon="{{ teacher_icon }}" title="申请成为老师" right_icon_url="{{ right_icon_url }}"></meCell>

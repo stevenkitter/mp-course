@@ -17,7 +17,11 @@
     "pages/myApply/myApply",
     "pages/myCourseWare/myCourseWare",
     "pages/postCourseware/postCourseware",
-    "pages/allCourseware/allCourseware"
+    "pages/allCourseware/allCourseware",
+    "pages/allExercises/allExercises",
+    "pages/myExercises/myExercises",
+    "pages/postExercises/postExercises",
+    "pages/myBuyExercise/myBuyExercise"
   ],
   "window": {
     "backgroundTextStyle": "light",

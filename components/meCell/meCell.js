@@ -46,6 +46,16 @@ Component({
           url: '/pages/myCourseWare/myCourseWare',
         })
       }
+      if (e.currentTarget.dataset.title == "上传习题") {
+        wx.navigateTo({
+          url: '/pages/myExercises/myExercises',
+        })
+      }
+      if (e.currentTarget.dataset.title == "我买的习题") {
+        wx.navigateTo({
+          url: '/pages/myBuyExercise/myBuyExercise',
+        })
+      }
     }
   }
 })

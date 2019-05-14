@@ -1,0 +1,15 @@
+<!--pages/allCourse/allCourse.wxml-->
+<view class='container'>
+  <view class='tapContainer'>
+    <view class='item' wx:for="{{myCourses}}" wx:key="{{item.id}}"  data-index='{{index}}'>
+      <view class='image_container'>
+        <image class='icon' src='{{item.tkFile.fileName}}'></image>
+      </view>
+      <view class='detail'>
+        <text class='title'>{{ item.title }}</text>
+        <text class='price'>价格：¥{{ item.price }}</text>
+      </view>
+      <button bindtap='buy' data-index='{{index}}'>购买</button>
+    </view>
+  </view>
+</view>

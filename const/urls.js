@@ -1,4 +1,4 @@
-const BaseUrl = "http://localhost:8080";
+const BaseUrl = "https://course.julu666.com";
 
 const Code2SessionUri = BaseUrl + "/code2session";
 
@@ -39,6 +39,13 @@ const MyCoursewareUri = BaseUrl + CoursewareModule + "/my";
 const DeleteCoursewareUri = BaseUrl + CoursewareModule + "/delete";
 
 
+const ExerciseModule = "/exercise";
+const AddExerciseUri = BaseUrl + ExerciseModule + "/add";
+const AllExerciseUri = BaseUrl + ExerciseModule + "/all";
+const MyExerciseUri = BaseUrl + ExerciseModule + "/my";
+const DeleteExerciseUri = BaseUrl + ExerciseModule + "/delete";
+const ExerciseBuyListUri = BaseUrl + ExerciseModule + "/buyList";
+const BuyExerciseUri = BaseUrl + ExerciseModule + "/buy";
 
 module.exports = {
   BaseUrl: BaseUrl,
@@ -72,5 +79,13 @@ module.exports = {
   AddCoursewareUri: AddCoursewareUri,
   AllCoursewareUri: AllCoursewareUri,
   MyCoursewareUri: MyCoursewareUri,
-  DeleteCoursewareUri: DeleteCoursewareUri
+  DeleteCoursewareUri: DeleteCoursewareUri,
+
+
+  AddExerciseUri: AddExerciseUri,
+  AllExerciseUri: AllExerciseUri,
+  MyExerciseUri: MyExerciseUri,
+  DeleteExerciseUri: DeleteExerciseUri,
+  ExerciseBuyListUri: ExerciseBuyListUri,
+  BuyExerciseUri: BuyExerciseUri
 }

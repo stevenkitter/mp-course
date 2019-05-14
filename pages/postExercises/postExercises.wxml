@@ -1,0 +1,23 @@
+<!--pages/course/postCourse.wxml-->
+<view class='container'>
+  <view class='tapContainer'>
+
+    <view class='file'>
+      <image class='placeholder' wx:if="{{ !uploaded }}" src='/images/video.png'></image>
+      <image wx:if="{{ uploaded }}" src='{{ imageUrl }}'></image>
+    </view>
+
+    <view class='actions'>
+      <view class='action'>
+        <button class='upload_btn' bindtap='chooseVideo'>选择或者拍摄照片</button>
+      </view>
+      <view class='title'>
+        <input placeholder="习题标题" auto-focus bindinput='bindTitleInput' />
+      </view>
+      <view class='content'>
+        <input placeholder="习题价格" type='digit' bindinput='bindContentInput'/>
+      </view>
+      <button class="sure_btn" bindtap='sure'>确定</button>
+    </view>
+  </view>
+</view>

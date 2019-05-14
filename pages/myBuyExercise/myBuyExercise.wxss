@@ -1,0 +1,63 @@
+/* pages/myCourse/myCourse.wxss */
+
+page {
+  height: 100%;
+  background: #f3f4f8
+}
+
+.upload_btn {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  right: 20px;
+  bottom: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  justify-content: flex-start;
+  background: #fff;
+}
+
+.icon{
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+.detai{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.title {
+  font-size: 15px;
+  height: 20px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+.price {
+  font-size: 12px;
+  
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+
+.action {
+  display: flex;
+  flex-direction: row; 
+}
+
+.btn {
+  background: #4990E4;
+  color: #fff;
+  font-size: 12px;
+  padding: 0px;
+  width: 45px;
+  line-height: 20px;
+}

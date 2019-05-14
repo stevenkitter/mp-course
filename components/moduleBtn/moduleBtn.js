@@ -49,6 +49,11 @@ Component({
           url: '/pages/mybooks/mybooks',
         })
       }
+      if (e.currentTarget.dataset.title == "习题购买") {
+        wx.navigateTo({
+          url: '/pages/allExercises/allExercises',
+        })
+      }
     }
   }
 })
