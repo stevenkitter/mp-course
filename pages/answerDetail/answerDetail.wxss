@@ -1,0 +1,70 @@
+/* pages/answerDetail/answerDetail.wxss */
+
+.top_container {
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+.images {
+  display: flex;
+  flex-direction: column;
+}
+.item_image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.comment_tag {
+  padding: 0 10px;
+  border-left: 2px solid #55B4D7;
+  margin-bottom: 10px;
+}
+.comments {
+  margin-top: 10px;
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+
+input {
+  width: 680rpx;
+  left: 25rpx;
+  bottom: 0px;
+  position: fixed;
+  padding: 10rpx;
+  font-size: 15px;
+  border: 1px solid #F3F4F8;
+  background: #fff;
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+  border-top: 1px solid #F3F4F8;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.username {
+  color: #6B6B6B;
+}
+.comment_content {
+  color: #949494;
+}
+.time {
+  color: #949494;
+}

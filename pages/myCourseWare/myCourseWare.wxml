@@ -1,0 +1,17 @@
+<!--pages/myCourseWare/myCourseWare.wxml-->
+<view class='container'>
+  <view class='tapContainer'>
+    <view class='item' wx:for="{{myCourseWares}}" wx:key="{{item.id}}" bindtap='itemClicked' data-index='{{index}}'>
+      <view class='detai'>
+        <text class='title'>{{ item.title }}</text>
+        <text class='content'>{{ item.content }}</text>
+      </view>
+
+      <view class='action'>
+        <button class='btn' bindtap='deleteCourse' data-coursewareId='{{ item.coursewareId }}'>删除</button>
+      </view>
+    </view>
+  </view>
+  <image class='upload_btn' src='/images/upload.png' bindtap='postCourse'></image>
+</view>
+

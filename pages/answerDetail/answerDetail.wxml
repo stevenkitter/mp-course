@@ -1,0 +1,26 @@
+<!--pages/answerDetail/answerDetail.wxml-->
+
+<view class='container'>
+  <view class='tapContainer'>
+    <view class='top_container'>
+      <text class='title'>{{answer.title}}</text>
+      <view class='images'>
+        <image class='item_image' wx:key="{{item.id}}" wx:for="{{answer.tkFiles}}" src='{{item.fileName}}'></image>
+      </view>
+      <text class='desc'>{{answer.content}}</text>
+    </view>
+
+    <view class='comments'>
+      <text class="comment_tag">评论</text>
+      <view class='comment' wx:for="{{comments}}" wx:key="{{item.id}}">
+        <image class='icon' src="{{item.user.avatarUrl}}"></image>
+        <view class='right'>
+          <text class='username'>{{item.user.nickName}}</text>
+          <text class='comment_content'>{{item.content}}</text>
+          <text class='time'>{{item.created_at}}</text>
+        </view>
+      </view>
+    </view>
+    <input bindinput='bindInput' auto-focus placeholder='给个评论再走' bindconfirm="bindconfirm"></input>
+  </view>
+</view>

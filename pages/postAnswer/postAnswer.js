@@ -143,6 +143,23 @@ Page({
     }
     Promise.all(ps).then(function(res){
       console.log(res);
+      HTTP.POST({
+        fileIds: res,
+        title: that.data.title,
+        content: that.data.desc
+      }, URIS.SaveAnswerUri).then(function(res){
+        console.log(res);
+        if (res.data.code === 200) {
+          wx.showToast({
+            title: res.data.msg,
+            duration: 3000,
+            complete: function(){
+              wx.navigateBack({
+              })
+            }
+          })
+        }
+      })
     })
 
   },

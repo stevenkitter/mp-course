@@ -1,9 +1,7 @@
-// pages/answers/answer.js
+// pages/myApply/myApply.js
 
-
-const URIS = require("../../const/urls.js")
 const HTTP = require("../../utils/http.js")
-
+const URIS = require("../../const/urls.js")
 
 Page({
 
@@ -11,27 +9,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    answers: [],
-    page: 0,
+    applies: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.loadData(false)
+
   },
-  loadData(tag) {
-    if (!tag) {
-      this.setData({ page: 0, answers: [] })
-    }
-    const that = this;
-    HTTP.GET({ page: this.data.page }, URIS.AllAnswerUri).then(function (res) {
-      that.setData({
-        answers: that.data.answers.concat(res.data.data)
-      })
-    })
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -79,13 +66,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  answerDetail(e) {
-    const index = e.currentTarget.dataset.index;
-    const an = this.data.answers[index];
-    let js = JSON.stringify(an);
-    wx.navigateTo({
-      url: '/pages/answerDetail/answerDetail?answer=' + js,
-    })
   }
 })

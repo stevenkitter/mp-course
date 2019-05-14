@@ -36,6 +36,16 @@ Component({
           url: '/pages/myAnswer/myAnswer',
         })
       }
+      if (e.currentTarget.dataset.title == "我的申请") {
+        wx.navigateTo({
+          url: '/pages/mybooks/mybooks',
+        })
+      }
+      if (e.currentTarget.dataset.title == "上传课件") {
+        wx.navigateTo({
+          url: '/pages/myCourseWare/myCourseWare',
+        })
+      }
     }
   }
 })

@@ -24,6 +24,21 @@ const ApplyBooks = BaseUrl + BookModule + "/apply";
 const ApplyBookListUri = BaseUrl + BookModule + "/my";
 const ReceiveBookUri = BaseUrl + BookModule + "/receive";
 
+const AnswerModule = "/answer";
+const SaveAnswerUri = BaseUrl + AnswerModule + "/add";
+const MyAnswersUri = BaseUrl + AnswerModule + "/my";
+const DeleteMyAnswersUri = BaseUrl + AnswerModule + "/delete";
+const AddCommentUri = BaseUrl + AnswerModule + "/comment";
+const CommentListUri = BaseUrl + AnswerModule + "/commentList";
+const AllAnswerUri = BaseUrl + AnswerModule + "/all";
+
+const CoursewareModule = "/courseware";
+const AddCoursewareUri = BaseUrl + CoursewareModule + "/add";
+const AllCoursewareUri = BaseUrl + CoursewareModule + "/all";
+const MyCoursewareUri = BaseUrl + CoursewareModule + "/my";
+const DeleteCoursewareUri = BaseUrl + CoursewareModule + "/delete";
+
+
 
 module.exports = {
   BaseUrl: BaseUrl,
@@ -44,5 +59,18 @@ module.exports = {
 
   ApplyBookListUri: ApplyBookListUri,
   ReceiveBookUri: ReceiveBookUri,
-  FamousCourseUri: FamousCourseUri
+  FamousCourseUri: FamousCourseUri,
+
+  SaveAnswerUri: SaveAnswerUri,
+  MyAnswersUri: MyAnswersUri,
+  DeleteMyAnswersUri: DeleteMyAnswersUri,
+
+  AddCommentUri: AddCommentUri,
+  CommentListUri: CommentListUri,
+  AllAnswerUri: AllAnswerUri,
+
+  AddCoursewareUri: AddCoursewareUri,
+  AllCoursewareUri: AllCoursewareUri,
+  MyCoursewareUri: MyCoursewareUri,
+  DeleteCoursewareUri: DeleteCoursewareUri
 }
