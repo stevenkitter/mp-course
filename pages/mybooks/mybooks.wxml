@@ -4,7 +4,7 @@
     <checkbox-group bindchange="checkboxChange">
       <view class='item' wx:for="{{books}}" wx:key="{{item.id}}" data-index='{{index}}'>
         <view>
-          <image class='icon' src='{{item.icon}}'></image>
+          <image class='icon' src='{{item.books.icon}}'></image>
         </view>
 
         <view class='detai'>

@@ -1,4 +1,5 @@
 const BaseUrl = "https://course.julu666.com";
+// const BaseUrl = "http://localhost:8080";
 
 const Code2SessionUri = BaseUrl + "/code2session";
 

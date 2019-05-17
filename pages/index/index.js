@@ -65,7 +65,7 @@ Page({
   famousItemClicked: function (e) {
     console.log(e);
     const index = e.currentTarget.dataset.index;
-    const course = this.data.myCourses[index];
+    const course = this.data.famous[index];
     const js = JSON.stringify(course)
     wx.navigateTo({
       url: '/pages/courseDetail/courseDetail?course=' + js,

@@ -5,6 +5,10 @@ page {
   background: #f3f4f8
 }
 
+.tapContainer {
+  padding-bottom: 50px;
+}
+
 .item {
   display: flex;
   flex-direction: row;
@@ -53,7 +57,7 @@ page {
 }
 
 .tools {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;

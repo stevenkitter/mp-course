@@ -3,7 +3,7 @@
   <view class='tapContainer'>
     <view class='item' wx:for="{{myCourses}}" wx:key="{{item.id}}" bindtap='itemClicked' data-index='{{index}}'>
       <view class='image_container'>
-        <image class='icon' src='{{item.tkFile.thumbnailName}}'></image>
+        <image class='icon' src='{{item.tkFiles[0].thumbnailName}}'></image>
       </view>
       <view class='detai'>
         <text class='title'>{{ item.title }}</text>

@@ -3,7 +3,7 @@
   <view class='tapContainer'>
   
     <view class='video'>
-      <video style='width: 100%' src='{{ course.tkFile.fileName}}'></video>
+      <video style='width: 100%' src='{{ course.tkFiles[0].fileName}}'></video>
     </view>
     <view class='title'>
       <text class='title_text'>标题</text>
