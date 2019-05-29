@@ -17,7 +17,7 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      url: "http://localhost:8080/uploadCourseware?token=" + wx.getStorageSync("token")
+      url: "https://course.julu666.com/uploadCourseware?token=" + wx.getStorageSync("token")
     })
   },
 

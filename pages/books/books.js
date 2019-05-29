@@ -4,6 +4,8 @@
 const URIS = require("../../const/urls.js")
 const HTTP = require("../../utils/http.js")
 
+const app = getApp()
+
 Page({
 
   /**
@@ -89,6 +91,15 @@ Page({
     })
   },
   sure: function() {
+
+    if (app.globalData.userInfo.userRole === 0) {
+      wx.showToast({
+        title: '学生无法申请',
+        icon: "none"
+      })
+      return
+    }
+
     if (this.data.selected.length === 0) {
       wx.showToast({
         title: '请选择',

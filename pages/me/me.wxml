@@ -1,18 +1,18 @@
 <!--pages/me.wxml-->
 <view class='container'>
   <view class='tapContainer'>
-    <view class='header' bindtap='userDetail'>
+    <button class='header' bindgetuserinfo='getuserinfo' open-type='getUserInfo'>
       <image class='header_user_head' src='{{ userInfo.avatarUrl ? userInfo.avatarUrl : "/images/default_head.png" }}'></image>
       <view class='header_right_content'>
         <text class='header_right_content_name'>{{ userInfo.nickName ? userInfo.nickName : "请登录"}}</text>
         <text class='header_right_content_detail'>{{ userInfo.userRole === 0 ? "学生":"教师" }}</text>
       </view>
       <image class='right_icon_url' src='{{right_icon_url}}'></image>
-    </view>
+    </button>
     <view class='content'>
       <meCell icon="{{ answer_icon }}" title="我买的习题" right_icon_url="{{ right_icon_url }}"></meCell>
       <meCell icon="{{ answer_icon }}" title="我的答疑" right_icon_url="{{ right_icon_url }}"></meCell>
-      <meCell icon="{{ apply_icon }}" title="我的申请" right_icon_url="{{ right_icon_url }}"></meCell>
+      <meCell wx:if="{{ userInfo.userRole === 1 }}" icon="{{ apply_icon }}" title="我的申请" right_icon_url="{{ right_icon_url }}"></meCell>
       <meCell icon="{{ teacher_icon }}" title="申请成为老师" right_icon_url="{{ right_icon_url }}"></meCell>
       <meCell wx:if="{{ userInfo.userRole === 1 }}" icon="{{ video_icon }}" title="发布视频" right_icon_url="{{ right_icon_url }}"></meCell>
       <meCell wx:if="{{ userInfo.userRole === 1 }}" icon="{{ video_icon }}" title="上传课件" right_icon_url="{{ right_icon_url }}"></meCell>

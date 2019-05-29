@@ -104,7 +104,10 @@ Page({
         wx.openDocument({
           filePath,
           success(res) {
-            console.log('打开文档成功')
+            console.log('打开文档成功');
+          },
+          fail(err){
+            console.log(err);
           }
         })
       }

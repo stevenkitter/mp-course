@@ -37,17 +37,20 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    this.getUser()
+  },
+  getUser: function() {
     const that = this
-    HTTP.GET({}, URIS.UserInfoUri).then(function(res){
+    HTTP.GET({}, URIS.UserInfoUri).then(function (res) {
       if (res.statusCode === 200) {
         that.setData({
           userInfo: res.data.data
         })
+        app.globalData.userInfo = res.data.data
       }
-      
+
     })
   },
-
   /**
    * 生命周期函数--监听页面隐藏
    */
@@ -91,9 +94,7 @@ Page({
     HTTP.POST(res.detail.userInfo, URIS.SaveUserInfoUri).then(function(res){
       console.log(res)
     }).catch(function(err){})
-    this.setData({
-      userInfo: res.detail.userInfo
-    })
-    app.globalData.userInfo = res.detail.userInfo
+    this.getUser()
+    
   }
 })
